@@ -9,7 +9,7 @@ import CurrentBook from './components/CurrentBook';
 import { AppState } from './redux';
 
 
-const App=()=> {
+const App=React.memo(()=> {
   
   let dispatch=useDispatch();
   let books=useSelector(state=>state.appReducer.books);//масиив со всеми книгами по запросу
@@ -125,6 +125,6 @@ const App=()=> {
        
    
   );
-}
+})
 //src name categories autors
 export default App;

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import '../App.css';
 import { setCurrentBook } from '../reducers/app-reducer';
 
-function CurrentBook(props) {
+let CurrentBook=React.memo((props)=>{
     let bookData=useSelector(state=>state.appReducer.currentBook?.data[0]);//массив с данными текущей  книги
     let dispatch=useDispatch();
     let returnBack=()=>{
@@ -27,6 +27,6 @@ function CurrentBook(props) {
            
    
   );
-}
+})
 
 export default CurrentBook;

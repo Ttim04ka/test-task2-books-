@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 
-function AllBooks(props) {
+let AllBooks=React.memo((props)=>{
 
   let correctAutors=()=>{
     let autors='';
@@ -25,6 +25,6 @@ function AllBooks(props) {
            
    
   );
-}
+})
 
 export default AllBooks;
