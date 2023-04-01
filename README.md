@@ -1,4 +1,4 @@
-#book-search
+# book-search
 Book searching app created using React JS, Redux,Docker and integrated with Google Books API. This app allows users to search for books and get more detailed information about each of them.
 
 Link to deployed app: https://github.com/Ttim04ka/test-task2-books-/settings/pages .\
